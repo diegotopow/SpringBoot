@@ -47,13 +47,11 @@ public class UserController {
     
     @PostMapping("/")
     public User user(@RequestBody User user){
-        return this.userRepository.save(user);
-        
+        return this.userRepository.save(user);    
     }
 
     @GetMapping("/list")
     public List<User> list(){
         return users;
-    }
-    
+    }  
 }
